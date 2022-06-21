@@ -16,12 +16,16 @@ public class EmployeeDao {
 		
 		Transaction tx = ses.beginTransaction();
 		
-		int pk = (int) ses.aware();
+		int pk = (int) ses.save(e);
+		
+		return pk;
 		
 		
 	}
 	
 	public List<Employee> findAll(){
+		Session ses = HibernateUtil.getSession();
+		
 		
 	}
 	
