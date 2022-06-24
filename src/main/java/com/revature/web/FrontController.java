@@ -20,6 +20,7 @@ public class FrontController extends HttpServlet {
 			RequestHelper.processLogin(request, response);
 			break;
 		case "employees":
+			RequestHelper.processEmployees(request, response);
 			break;
 		case "register":
 			RequestHelper.processRegistration(request, response);
