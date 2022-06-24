@@ -16,6 +16,8 @@
       
       <property name = "hibernate.connection.url">
          jdbc:postgresql://localhost:5432/postgres
+         <!-- jdbc:postgresql://enterprise-220531.cvtq9j4axrge.us-east-1.rds.amazonaws.com -->
+         <!-- jdbc:postgresql://localhost:5432/postgres -->
       </property>
       
       <property name = "hibernate.connection.username">
@@ -27,10 +29,12 @@
       </property>
       
       <property name = "hibernate.default_schema">public</property>
-      
+      <!-- travist -->
+      <!-- public -->
       <property name ="hibernate.hbm2ddl.auto">create</property>
       
       <property name = "hibernate.show_sql">true</property>
       <!-- List of XML mapping files -->
+      <mapping class = "com.revature.models.Employee"></mapping>
    </session-factory>
 </hibernate-configuration>
