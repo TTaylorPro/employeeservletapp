@@ -58,7 +58,7 @@ function fetchEmps(){
 
     let hostname = window.location.hostname;
 
-    fetch(`http://${hostname}:8080/employee-servlet-app/employees`)
+    fetch(`http://${hostname}/employee-servlet-app/employees`)
     .then(response => response.json())
 
     .then(obj => console.log (obj))
