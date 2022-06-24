@@ -24,8 +24,8 @@ public class RequestHelper {
 	
 	public static void processEmployees(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		//1. set the content type to be application/json
-		//response.setContentType("application/json");
-		response.setContentType("text/html");
+		response.setContentType("application/json");
+		//response.setContentType("text/html");
 		
 		//2. Call the findAll() method from the employee service
 		List<Employee> emps = eServ.getAll();
